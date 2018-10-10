@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tema2_Ejer2</string>
+    <string name="siguiente">Siguiente</string>
+    <string name="anterior">Anterior</string>
+    <string name="nuevo">Nuevo</string>
+    <string name="borrar">Borrar</string>
+    <string name="buscar">Buscar</string>
+</resources>

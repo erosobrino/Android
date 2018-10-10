@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tema2_Ejer2</string>
+    <string name="siguiente">Next</string>
+    <string name="anterior">Previous</string>
+    <string name="nuevo">New</string>
+    <string name="borrar">Delete</string>
+    <string name="buscar">Search</string>
+</resources>
