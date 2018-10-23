@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tema3_Ejer2</string>
+    <string name="cont">Contador</string>
+    <string name="color">Cambiar Color</string>
+    <string name="decrementar">Decrementar</string>
+    <string name="fecha">Fecha</string>
+    <string name="hora">Hora</string>
+</resources>

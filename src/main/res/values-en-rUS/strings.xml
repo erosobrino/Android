@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tema3_Ejer2</string>
+    <string name="cont">Counter</string>
+    <string name="color">Change Color</string>
+    <string name="decrementar">Decrease</string>
+    <string name="fecha">Date</string>
+    <string name="hora">Time</string>
+</resources>
