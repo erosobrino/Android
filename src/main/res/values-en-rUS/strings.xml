@@ -6,4 +6,6 @@
     <string name="decrementar">Decrease</string>
     <string name="fecha">Date</string>
     <string name="hora">Time</string>
+    <string name="cancelar">Cancel</string>
+    <string name="aceptar">Accept</string>
 </resources>

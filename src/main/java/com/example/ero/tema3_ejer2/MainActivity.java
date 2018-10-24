@@ -1,9 +1,12 @@
 package com.example.ero.tema3_ejer2;
 
+import android.content.Intent;
 import android.graphics.Color;
+import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.style.BackgroundColorSpan;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -29,8 +32,10 @@ public class MainActivity extends AppCompatActivity {
         Switch switchColor = findViewById(R.id.switch1);
         final RadioGroup rgRadio = findViewById(R.id.radioGroup);
         final TextView tvSeleccionado = findViewById(R.id.tvItem);
-
-
+        Button btFecha = findViewById(R.id.btFecha);
+        Button btHora = findViewById(R.id.btHora);
+        TextView tvFecha = findViewById(R.id.tvFecha);
+        TextView tvHora = findViewById(R.id.tvHora);
 
         btCont.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     cont++;
                 }
-                tvCont.setText(cont+"");
+                tvCont.setText(cont + "");
             }
         });
 
@@ -49,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked) {
                     getWindow().getDecorView().setBackgroundColor(Color.GRAY);
-                }else{
+                } else {
                     getWindow().getDecorView().setBackgroundColor(Color.WHITE);
                 }
             }
@@ -58,8 +63,38 @@ public class MainActivity extends AppCompatActivity {
         rgRadio.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
-                tvSeleccionado.setText(checkedId+"");
+                tvSeleccionado.setText(checkedId + "");
             }
         });
+
+        btFecha.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent itFecha=new Intent(getApplicationContext(),Fecha.class);
+                startActivityForResult(itFecha,1);
+            }
+        });
+
+        btHora.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent itHora=new Intent(getApplicationContext(),Hora.class);
+                startActivityForResult(itHora,2);
+            }
+        });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode==1 && resultCode==RESULT_OK){
+            String fecha=data.getStringExtra("Fecha");
+            TextView tvFecha = findViewById(R.id.tvFecha);
+            tvFecha.setText(fecha);
+        }
+        if (requestCode==2 && resultCode==RESULT_OK){
+            String hora=data.getStringExtra("Hora");
+            TextView tvHora = findViewById(R.id.tvHora);
+            tvHora.setText(hora);
+        }
     }
 }
