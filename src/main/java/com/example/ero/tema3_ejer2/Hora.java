@@ -39,7 +39,15 @@ public class Hora extends AppCompatActivity {
         timePicker.setOnTimeChangedListener(new TimePicker.OnTimeChangedListener() {
             @Override
             public void onTimeChanged(TimePicker view, int hourOfDay, int minute) {
-                stringHora=hourOfDay+":"+minute;
+                String minuteAux=minute+"";
+                String hourAux=hourOfDay+"";
+                if (minute<10){
+                    minuteAux="0"+minute;
+                }
+                if (hourOfDay<10){
+                    hourAux="0"+hourOfDay;
+                }
+                stringHora=hourAux+":"+minuteAux;
                 seleccionada=true;
             }
         });

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/opNuevo"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="@string/nuevo"
+        app:showAsAction="always|withText">
+        <menu >
+            <item
+                android:id="@+id/op1"
+                android:icon="@android:drawable/btn_star"
+                android:title="Opcion1" />
+            <item
+                android:id="@+id/op2"
+                android:icon="@android:drawable/ic_dialog_email"
+                android:title="Opcion2" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/opBorrar"
+        android:icon="@android:drawable/ic_delete"
+        android:title="@string/borrar"
+        app:showAsAction="ifRoom|withText" />
+    <item
+        android:id="@+id/opEditar"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:title="@string/editar" />
+</menu>

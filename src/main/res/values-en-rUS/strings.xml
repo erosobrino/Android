@@ -8,4 +8,9 @@
     <string name="hora">Time</string>
     <string name="cancelar">Cancel</string>
     <string name="aceptar">Accept</string>
+    <string name="sinSeleccionar">Not Selected</string>
+    <string name="seleccionado">Selected</string>
+    <string name="nuevo">New</string>
+    <string name="borrar">Delete</string>
+    <string name="editar">Edit</string>
 </resources>
