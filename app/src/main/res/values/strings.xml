@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Peliculas</string>
+    <string name="peliculas">Listado Completo</string>
+    <string name="favoritos">Favoritos</string>
+    <string name="anadir">Añadir</string>
+    <string name="volver">Volver</string>
+    <string name="peliculas_favoritas">Peliculas Favoritas</string>
+    <string name="listado_completo">Listado Completo</string>
+    <string name="director">Director</string>
+    <string name="fecha">Fecha</string>
+    <string name="duracion">Duracion</string>
+    <string name="sala">Sala</string>
+</resources>

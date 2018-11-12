@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Films</string>
+    <string name="favoritos">Favorites</string>
+    <string name="anadir">Add</string>
+    <string name="peliculas">Full List</string>
+    <string name="volver">Return</string>
+    <string name="peliculas_favoritas">Favorite Films</string>
+    <string name="listado_completo">Complete List</string>
+    <string name="director">Director</string>
+    <string name="fecha">Date</string>
+    <string name="duracion">Duration</string>
+    <string name="sala">Room</string>
+</resources>

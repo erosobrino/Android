@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:layout_editor_absoluteY="81dp">
+
+    <ImageView
+        android:id="@+id/ivPortada"
+        android:layout_width="120dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/akira" />
+
+    <ImageView
+        android:id="@+id/ivClasificacion"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSala"
+        app:srcCompat="@drawable/g" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvTxtDirector"
+        app:layout_constraintStart_toEndOf="@+id/ivPortada"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTxtDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/director"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/ivPortada"
+        app:layout_constraintTop_toTopOf="@+id/tvDirector" />
+
+    <TextView
+        android:id="@+id/tvDirector"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvFecha"
+        app:layout_constraintStart_toEndOf="@+id/tvTxtDirector" />
+
+    <TextView
+        android:id="@+id/tvTxtFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/fecha"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/ivPortada"
+        app:layout_constraintTop_toTopOf="@+id/tvFecha" />
+
+    <TextView
+        android:id="@+id/tvFecha"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDuracion"
+        app:layout_constraintStart_toEndOf="@+id/tvTxtFecha" />
+
+    <TextView
+        android:id="@+id/tvTxtDuracion"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/duracion"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/ivPortada"
+        app:layout_constraintTop_toTopOf="@+id/tvDuracion" />
+
+    <TextView
+        android:id="@+id/tvDuracion"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvSala"
+        app:layout_constraintStart_toEndOf="@+id/tvTxtDuracion" />
+
+    <TextView
+        android:id="@+id/tvTxtSala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/sala"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/ivPortada"
+        app:layout_constraintTop_toTopOf="@+id/tvSala" />
+
+    <TextView
+        android:id="@+id/tvSala"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="32dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvTxtSala" />
+
+    <ImageView
+        android:id="@+id/ivFavorito"
+        android:layout_width="23dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivPortada"
+        app:layout_constraintTop_toBottomOf="@+id/tvTxtSala"
+        app:srcCompat="@drawable/ic_favorite" />
+
+</android.support.constraint.ConstraintLayout>

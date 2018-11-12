@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SinopsisPeliculaActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="188dp"
+        android:layout_height="305dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/akira" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text='Por orden imperial, la familia Atreides deberá hacerse cargo de la explotación del desértico planeta de Arrakis, conocido también como \"Dune\" " +                 "que es el único planeta donde se encuentra la especia, una potente droga que, además, es necesaria para los vuelos espaciales. Anteriormente, el planeta " +                 "había sido gobernado por los Harkonen, que habían ejercido su mandato con puño de hierro, dejando una huella indeleble en la población indígena del planeta" +                 ". Cuando los Harkonen atacan el planeta con el beneplácito del Emperador para retomar su posición dominante sobre el planeta, Paul, el hijo del duque Leto " +                 "Atreides, deberá huir al desierto, donde le esperan múltiples peligros y una última oportunidad de vengarse y volver a su legítimo lugar como gobernante de" +                 " Arrakis'
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+</android.support.constraint.ConstraintLayout>
