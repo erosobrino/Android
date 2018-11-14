@@ -48,24 +48,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        File f = new File(getFilesDir(), "ero.txt");
-        if (!f.exists()) {
-            try {
-                f.createNewFile();
-                Toast alerta = Toast.makeText(getApplicationContext(), "Se crea", Toast.LENGTH_SHORT);
-                alerta.show();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }else{
-            Toast alerta = Toast.makeText(getApplicationContext(), "ya existe "+f.getAbsolutePath(), Toast.LENGTH_LONG);
-            alerta.show();
-        }
-        try (FileWriter fichOut = new FileWriter(f)) {
-            fichOut.write("funciona");
-        } catch (Exception e) {
-
-        }
+//        Toast alerta1 = Toast.makeText(getApplicationContext(), "Creando", Toast.LENGTH_SHORT);
+//        alerta1.show();
+//        File f = new File(getFilesDir(), "ero.txt");
+//        if (!f.exists()) {
+//            try {
+//                f.createNewFile();
+//                Toast alerta = Toast.makeText(getApplicationContext(), "Se crea", Toast.LENGTH_SHORT);
+//                alerta.show();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        } else {
+//            Toast alerta = Toast.makeText(getApplicationContext(), "ya existe " + f.getAbsolutePath(), Toast.LENGTH_LONG);
+//            alerta.show();
+//        }
+//        try (FileWriter fichOut = new FileWriter(f)) {
+//            while (true) {
+//                fichOut.write("funciona");
+//            }
+//        } catch (Exception e) {
+//
+//        }
 
         Libro libro1 = new Libro("Libro1", "Ero", 5);
         libros.add(libro1);
